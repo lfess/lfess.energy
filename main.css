@@ -9,7 +9,7 @@
 #top img {
   margin-bottom: 2em;
 }
-#working_groups, #agreement, #learnmore {
+#working_groups, #agreement, #learnmore, #steeringcommittee {
   margin: auto;
   text-align: center;
 }
@@ -20,25 +20,25 @@ section:not(#top):before {
   margin: 1em 4em;
 }
 #working_groups h1 {
-    margin-bottom: 0;
-    margin-top: 1em;
+  margin-bottom: 0;
+  margin-top: 1em;
 }
 #learnmore a[role=button] img {
   width: 200px;
   height: 70px;
 }
 nav {
-    justify-content: space-between;
-    padding: 0 1em;
-    background: lightblue;
-    position: sticky;
-    top: 0;
-    width: 100%;
+  justify-content: space-between;
+  padding: 0 1em;
+  background: lightblue;
+  position: sticky;
+  top: 0;
+  width: 100%;
 }
 html {
   scroll-behavior: smooth;
 }
 footer {
-      background: lightblue;
+  background: lightblue;
   padding: 1em !important;
 }
