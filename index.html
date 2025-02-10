@@ -30,12 +30,15 @@
       <section id="working_groups">
         <h1>Working Groups</h1>
         <p>Click the logo below to learn more about each working group.</p>
-        <iframe src="https://landscape.lfenergy.org/pages/lfess?style=body{background-color:white;}%23embedded-footer{display:none;}" frameborder="0" id="landscape" scrolling="no" style="width: 1px; min-width: 100%; opacity: 1; visibility: visible; overflow: hidden;"></iframe>
-        <script src="https://landscape.lfenergy.org/iframeResizer.js"></script>
-        <script>
-window.onload = function() {
-  document.getElementById("landscape").contentWindow.postMessage({type: 'css', css:'body {background: #fff;}.borderless-mode .sh_wrapper {display: none;}.column-content, .column-content [data-section-id] {justify-content: center }@media (max-width: 1839px) {.embed .mosaic-wrap {width: 50%; }}@media (max-width: 1639px) {  .embed .mosaic-wrap {width: 50%;}}@media (max-width: 1439px) {  .embed .mosaic-wrap {width: 50%;}}@media (max-width: 1239px) {  .embed .mosaic-wrap {width: 50%;}}@media (max-width: 1039px) {  .embed .mosaic-wrap {width: 50%;}}@media (max-width: 850px) and (max-height: 750px) {  .embed .mosaic-wrap {width: 50%; }}@media (max-width: 812px) {  .embed .mosaic-wrap {width: 50%; }}@media (max-width: 550px) {  .embed .mosaic-wrap {width: 50%; }}' },'*');
-}
+        <!-- Landscape embed view -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.9/iframeResizer.min.js"></script>
+        <iframe id="iframe-landscape" src="https://landscape.lfenergy.org/embed/embed.html?base-path=&classify=category&key=lfess-working-groups--working-group&headers=false&category-header=true&category-in-subcategory=false&title-uppercase=false&title-alignment=left&title-font-family=sans-serif&title-font-size=13&style=shadowed&bg-color=%23009ade&fg-color=%23ffffff&item-modal=true&item-name=true&size=xl&items-alignment=center&item-name-font-size=11&iframe-resizer=true" style="width:100%;height:100%;display:block;border:none;"></iframe>
+        <!-- Landscape embed item details view -->
+        <!-- NOTE: the script and the iframe below should only be added once, even when adding multiple embed views to the page -->
+        <script src="https://landscape.lfenergy.org/embed/embed-item.js"></script>
+        <iframe id="embed-item" src="https://landscape.lfenergy.org/embed/embed-item.html" style="width:100%;height:100%;display:block;border:none;position:fixed;top:0;bottom:0;left:0;right:0;z-index:2147483647;display:none;"></iframe>
+        <script type="text/javascript" nonce="">
+          iFrameResize({ }, '#iframe-landscape');
         </script>
       </section>
       <section id="agreement" />
